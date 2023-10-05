@@ -142,45 +142,10 @@ h1{
 
 /* ~~~~~~~VEHICULOS~~~~~~~~ */
 
-
-.section_hijo{
-    display: flex;
-    flex-direction: column;
-    color: #c8c7c7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+.foto_auto{
+    width: 1920px;
+    height: 1080px;
 }
-.cajaauto{
-    display: flex;
-    align-items: stretch;
-    margin-bottom: 10%;
-    justify-content: space-around;
-}
-.descripcion_auto{
-    width: 50%;
-    background-color: #24242475;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
-}
-
-.buttonClass {
-    font-size:15px;
-    font-family:Verdana;
-    width:200px;
-    height:35px;
-    border-width:1px;
-    color:rgba(245, 243, 243, 1);
-    border-color:rgba(10, 10, 10, 1);
-    font-style:italic;
-    text-shadow: 1px 0px 0px rgba(12, 12, 12, 1);
-    background:rgba(253, 5, 35, 1);
-}
-
-.buttonClass:hover {
-    background: rgba(89, 248, 12, 1)
-}           
 
 /* ~~~~~~~CONTACTO~~~~~~~~ */
 
