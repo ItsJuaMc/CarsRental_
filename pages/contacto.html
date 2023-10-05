@@ -7,7 +7,7 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Young+Serif&display=swap');</style>
     <title>Cars Rental</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -26,22 +26,28 @@
         </nav>
     </header>
     <main class="master">
+        <h1 class="titulo">CONTACTANOS</h1>
         <section class="section_contacto">
-            <div class="ingreso_1">
-                <div class="">
-                    <form action="">
-                        <h2>Correo electronico</h2>
-                        <input type="email">
-                        <h2>Contraseña</h2>
-                        <input type="password">
-                        <a href="#">Olvidaste tu contraseña?</a>
-                    </form>
+            <div class="contenedor_contacto">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="label_contacto">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
                 </div>
-                <input type="submit" value="Acceder" class="botonenviar">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="label_contacto">E-mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="label_contacto">Comparte tus pensamientos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="boton_contacto">
+                    <a href="#" class="bn13">Compartir</a>
+                </div>
             </div>
-            <!-- <div>
-                <img src="" alt="imagen ilustrativa de prestacion de nuestro servicio">
-            </div> -->
+            <div>
+                <img class="foto_ilustrativa" src="../assets/images/ilustrativa.jpg" alt="imagen ilustrativa de prestacion de nuestro servicio">
+            </div>
         </section>
     </main>
     <footer class="piedepagina">
@@ -51,8 +57,9 @@
             <a href="https://instagram.com"><img class="redes" src="../assets/images/instagram.png" alt="logo de instagram"></a>
             <a href="https://wa.link/x31oxy"><img class="redes" src="../assets/images/whatsapp.png" alt="logo de whatsapp"></a>
         </div>
-        <p>Copyright CarsRental 2023  - Todos los derechos reservados</p>
+        <p class="copyright">Copyright CarsRental 2023  - Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
 

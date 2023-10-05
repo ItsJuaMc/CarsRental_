@@ -16,7 +16,7 @@
 .logoprincipal{
     display: flex;
     justify-content: flex-start;
-    width: 20%;
+    width: 30%;
     height: 100%;
 }
 .listado{
@@ -54,7 +54,7 @@
 .section_inicio{
     display: inline
 }
-h1{
+.titulo{
     font-family: 'Young Serif', serif;
     color: #FF0000;
     display: flex;
@@ -72,6 +72,7 @@ h1{
     background-color: #24242450;
     font-size: 18px;
 }
+
 .contenido1{
     flex: 1;
     display: flex;
@@ -106,11 +107,63 @@ h1{
     padding-right: 1%;
     margin-left: 1.5%;
 }
-
 .texto_contenido3{
     padding-top: 8px;
 }
-
+@media (min-width: 320px) and (max-width: 767px){
+    .contenedor_nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo"
+        "lista"
+        "lista"
+        "lista"
+        "lista"
+        "lista";
+        width: 100vw;
+        justify-items: center;
+    }
+    .logoprincipal{
+        display: grid;
+        grid-area: logo;
+        width: 90%;
+        height: 100%;
+    }
+    .listado{
+        display: grid;
+        grid-area: lista;
+        justify-items: center;
+    }
+    .titulo{
+        font-size: 48px;
+    }
+    .padresdecontenido{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "contenido1"
+        "contenido2"
+        "contenido3";
+        width: 100%;
+        justify-content: center;
+    }
+    .contenido1{
+        grid-area: contenido1;
+    }
+    .contenido2{
+        grid-area: contenido2;
+        font-size: 18px;
+    }
+    .foto_contenido2{
+        width: 100%;
+    }
+    .contenido3{
+        grid-area: contenido3;
+    }
+}
 /* ~~~~~~~USTEDES~~~~~~~~ */
 
 .ustedes_section{
@@ -151,14 +204,79 @@ h1{
 
 .section_contacto{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    background-color: #24242475;
+    color: white;
+    justify-content: space-evenly;
+    padding: 5%;
+    background-color: #24242450;
+}
+.contenedor_contacto{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 75%;
 }
 
+.label_contacto{
+    font-family: 'Oswald';
+    font-size: 22px;
+}
+.foto_ilustrativa{
+    border-radius: 15px;
+}
 
+/* ~~~~~~~BOTON CONTACTO~~~~~~~~ */
+.boton_contacto{
+    display: flex;
+    justify-content: center;
+}
+.bn13 {
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    transition: all 0.2s;
+    animation: bn13bouncy 5s infinite linear;
+    position: relative;
+}
 
+.bn13:hover {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
 
+@keyframes bn13bouncy {
+0% {
+    top: 0em;
+}
+40% {
+    top: 0em;
+}
+43% {
+    top: -0.9em;
+}
+46% {
+    top: 0em;
+}
+48% {
+    top: -0.4em;
+}
+50% {
+    top: 0em;
+}
+100% {
+    top: 0em;
+}
+}
 
 
 /* ~~~~~~~CUENTA~~~~~~~~ */
@@ -224,6 +342,30 @@ h1{
     border-radius: 30px;
 }
 
+@media (min-width: 320px) and (max-width: 767px){
+    .cuenta_form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas: 
+        "."
+        "box"
+        "boton";
+        width: 100vw;
+        justify-items: center;
+        align-items: start;
+    }
+    .formulario{
+        display: grid;
+        grid-area: box;
+        align-content: center;
+        justify-items: center;
+    }
+    .acceder_boton{
+        grid-area: boton;
+    }
+}
+
 /*FOOTER*/
 
 .piedepagina{
@@ -253,4 +395,29 @@ h1{
     font-size: 10px;
 }
 
-
+@media (min-width: 320px) and (max-width: 768px){
+    .piedepagina{
+        display: grid;
+    }
+    .contenedorpie{
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "copy"
+        "redes"
+        "redes"
+        "redes";
+        width: 100vw;
+        justify-items: center;
+        font-size: 13px;
+    }
+    .contenedorpie h2{
+        grid-area: copy;
+    }
+    .redes{
+        grid-area: redes;
+        width: 40px;
+        height: 40px;
+    }
+}
