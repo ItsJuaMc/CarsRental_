@@ -406,7 +406,7 @@
         justify-items: center;
     }
     .titulo{
-        font-size: 48px;
+        font-size: 41px;
     }
     .padresdecontenido{
         display: grid;
@@ -479,9 +479,6 @@
 
 /* Media contacto */
 @media (min-width: 320px) and (max-width: 767px){
-    .titulo{
-        font-size: 42px;
-    }
     .foto_ilustrativa{
         display: none;
     }
