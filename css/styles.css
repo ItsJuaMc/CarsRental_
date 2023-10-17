@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Young+Serif&display=swap');
 *{ 
     margin: 0;
     padding: 0;
@@ -97,6 +99,13 @@
     justify-content: center;
     flex-wrap: wrap;
     font-size: 22px;
+    width: 600px;
+}
+.foto_contenido2{
+    width: 100%;
+}
+.enlace_foto{
+    /*JUAN ACORDATE DE HACER UN HOVER DEL ENLACE!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 .contenido3{
     flex: 1;
@@ -110,60 +119,7 @@
 .texto_contenido3{
     padding-top: 8px;
 }
-@media (min-width: 320px) and (max-width: 767px){
-    .contenedor_nav{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "logo"
-        "lista"
-        "lista"
-        "lista"
-        "lista"
-        "lista";
-        width: 100vw;
-        justify-items: center;
-    }
-    .logoprincipal{
-        display: grid;
-        grid-area: logo;
-        width: 90%;
-        height: 100%;
-    }
-    .listado{
-        display: grid;
-        grid-area: lista;
-        justify-items: center;
-    }
-    .titulo{
-        font-size: 48px;
-    }
-    .padresdecontenido{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "contenido1"
-        "contenido2"
-        "contenido3";
-        width: 100%;
-        justify-content: center;
-    }
-    .contenido1{
-        grid-area: contenido1;
-    }
-    .contenido2{
-        grid-area: contenido2;
-        font-size: 18px;
-    }
-    .foto_contenido2{
-        width: 100%;
-    }
-    .contenido3{
-        grid-area: contenido3;
-    }
-}
+
 /* ~~~~~~~USTEDES~~~~~~~~ */
 
 .ustedes_section{
@@ -193,12 +149,27 @@
 }
 
 
+
+
 /* ~~~~~~~VEHICULOS~~~~~~~~ */
 
 .foto_auto{
-    width: 1920px;
-    height: 1080px;
+    width: 1080px;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
+.carousel-control-prev, .carousel-control-next{
+    width: 7%;
+    opacity: 1.5;
+}
+
+.descripcion_autos, h5{
+    color: white;
+    text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
+}
+
 
 /* ~~~~~~~CONTACTO~~~~~~~~ */
 
@@ -279,6 +250,8 @@
 }
 
 
+
+
 /* ~~~~~~~CUENTA~~~~~~~~ */
 
 .cuenta_form{
@@ -342,29 +315,6 @@
     border-radius: 30px;
 }
 
-@media (min-width: 320px) and (max-width: 767px){
-    .cuenta_form{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr;
-        grid-template-areas: 
-        "."
-        "box"
-        "boton";
-        width: 100vw;
-        justify-items: center;
-        align-items: start;
-    }
-    .formulario{
-        display: grid;
-        grid-area: box;
-        align-content: center;
-        justify-items: center;
-    }
-    .acceder_boton{
-        grid-area: boton;
-    }
-}
 
 /*FOOTER*/
 
@@ -395,6 +345,8 @@
     font-size: 10px;
 }
 
+
+/*Media footer*/
 @media (min-width: 320px) and (max-width: 768px){
     .piedepagina{
         display: grid;
@@ -408,16 +360,135 @@
         "redes"
         "redes"
         "redes";
-        width: 100vw;
         justify-items: center;
-        font-size: 13px;
+        font-size: 11px;
     }
     .contenedorpie h2{
         grid-area: copy;
+        font-size: 15px;
     }
     .redes{
         grid-area: redes;
         width: 40px;
         height: 40px;
+    }
+    .copyright{
+        margin-bottom: 0px;
+    }
+}
+
+
+/* Media header + inicio */
+@media (min-width: 320px) and (max-width: 767px){
+    .contenedor_nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo"
+        "lista"
+        "lista"
+        "lista"
+        "lista"
+        "lista";
+        width: 100vw;
+        justify-items: center;
+    }
+    .logoprincipal{
+        display: grid;
+        grid-area: logo;
+        width: 90%;
+        height: 100%;
+    }
+    .listado{
+        display: grid;
+        grid-area: lista;
+        justify-items: center;
+    }
+    .titulo{
+        font-size: 48px;
+    }
+    .padresdecontenido{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "contenido1"
+        "contenido2"
+        "contenido3";
+        width: 100%;
+        justify-content: center;
+    }
+    .contenido1{
+        grid-area: contenido1;
+    }
+    .contenido2{
+        grid-area: contenido2;
+        font-size: 18px;
+        width: 100%;
+    }
+    .foto_contenido2{
+        width: 100%;
+    }
+    .contenido3{
+        grid-area: contenido3;
+    }
+}
+
+
+
+
+/* Media ustedes */
+@media (min-width: 320px) and (max-width: 767px){
+    .fotos_ustedes{
+        width: 136px;
+        height: auto;
+    }
+    .ustedes{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .ustedes_texto{
+        font-size: 15px;
+        width: 66%;
+    }
+}
+
+
+/* Media vehiculos */
+@media (min-width: 320px) and (max-width: 767px){
+    ul{
+        padding-left: 0px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .foto_auto{
+        width: 329px;
+        height: auto;
+        margin-left: 23px;
+    }
+    .carousel-indicators{
+        margin-bottom: 0px;
+    }
+    .section_padre{
+        padding-bottom: 25px;
+    }
+}
+
+
+/* Media contacto */
+@media (min-width: 320px) and (max-width: 767px){
+    .titulo{
+        font-size: 42px;
+    }
+    .foto_ilustrativa{
+        display: none;
+    }
+    .section_contacto{
+        flex-direction: column;
+    }
+    .contenedor_contacto{
+        width: 85%;
     }
 }
