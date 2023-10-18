@@ -63,7 +63,7 @@
     font-size: 60px;
     text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
     padding-top: 2%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     justify-content: center;
 }
 .padresdecontenido{
@@ -330,14 +330,17 @@
 }
 .contenedorpie{
     display: flex;
-    padding: 50px;
+    padding: 42px;
     align-items: center;
     justify-content: center;
 }
+.contenedorpie h2{
+    font-size: 1.5rem;
+}
 .redes{
     padding: 5px;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 .copyright{
     font-family: 'Arial', sans-serif;
@@ -365,12 +368,12 @@
     }
     .contenedorpie h2{
         grid-area: copy;
-        font-size: 15px;
+        font-size: 12px;
     }
     .redes{
         grid-area: redes;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     .copyright{
         margin-bottom: 0px;
