@@ -99,10 +99,12 @@
     justify-content: center;
     flex-wrap: wrap;
     font-size: 22px;
-    width: 600px;
 }
-.foto_contenido2{
-    width: 100%;
+.contenido2 a img{
+    transition: all 200ms;
+}
+.contenido2 a img:hover{
+    transform: scale(1.10);
 }
 .enlace_foto{
     /*JUAN ACORDATE DE HACER UN HOVER DEL ENLACE!!!!!!!!!!!!!!!!!!!!!!!*/
