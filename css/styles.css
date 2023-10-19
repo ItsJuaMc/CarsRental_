@@ -331,6 +331,7 @@
     display: flex;
     animation:scale-up-center 0.4s;
     align-items: center;
+    justify-content: space-evenly;
 } 
 
 @keyframes scale-up-center{
