@@ -4,46 +4,6 @@
 @import "contacto";
 @import "cuenta";
 
-@media (min-width: 320px) and (max-width: 767px) {
-    .titulo{
-        display: none;
-    }
-    .padresdecontenido{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "contenido1"
-        "contenido2"
-        "contenido3";
-        width: 100%;
-        justify-content: center;
-        .contenido1{
-            grid-area: contenido1;
-            .h2_contenido{
-                margin-bottom: 5px;
-            }
-            .listado_desordenado_inicio{
-                margin: 13px;
-            }
-        }
-        .contenido2{
-            grid-area: contenido2;
-            font-size: 18px;
-            width: 100%;
-            .enlace_foto{
-                .foto_contenido2{
-                    width: 100%;
-                    height: 112%;
-                }
-            }
-        }
-        .contenido3{
-            grid-area: contenido3;
-        }
-    }
-}
-
 .master{
     background: url("../assets/images/background.jpg");
     width: 100%;
@@ -112,3 +72,42 @@
 
 
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .titulo{
+        display: none;
+    }
+    .padresdecontenido{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "contenido1"
+        "contenido2"
+        "contenido3";
+        width: 100%;
+        justify-content: center;
+        .contenido1{
+            grid-area: contenido1;
+            .h2_contenido{
+                margin-bottom: 5px;
+            }
+            .listado_desordenado_inicio{
+                margin: 13px;
+            }
+        }
+        .contenido2{
+            grid-area: contenido2;
+            font-size: 18px;
+            width: 100%;
+            .enlace_foto{
+                .foto_contenido2{
+                    width: 100%;
+                    height: 112%;
+                }
+            }
+        }
+        .contenido3{
+            grid-area: contenido3;
+        }
+    }
+}

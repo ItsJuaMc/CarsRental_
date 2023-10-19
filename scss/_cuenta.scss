@@ -1,25 +1,3 @@
-@media (min-width: 320px) and (max-width: 767px){
-    .formulario{
-        width: 100%;
-        height: 420px;
-        margin-left: 0px;
-        .email{
-            align-items: center;
-            .entrada{
-                width: 90%;
-            }
-        }
-        .password{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    .mockup{
-        display: none;
-    }
-
-}
 
 .master_cuenta{
     background: url("../assets/images/fondo.jpg");
@@ -97,3 +75,25 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 767px){
+    .formulario{
+        width: 100%;
+        height: 420px;
+        margin-left: 0px;
+        .email{
+            align-items: center;
+            .entrada{
+                width: 90%;
+            }
+        }
+        .password{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .mockup{
+        display: none;
+    }
+
+}

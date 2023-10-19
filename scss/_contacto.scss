@@ -1,14 +1,4 @@
-@media (min-width: 320px) and (max-width: 767px){
-    .section_contacto{
-        flex-direction: column;
-        .contenedor_contacto{
-            width: 85%;
-        }
-        .foto_ilustrativa{
-            display: none;
-        }
-    }
-}
+
 
 .section_contacto{
     display: flex;
@@ -75,3 +65,14 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 767px){
+    .section_contacto{
+        flex-direction: column;
+        .contenedor_contacto{
+            width: 85%;
+        }
+        .foto_ilustrativa{
+            display: none;
+        }
+    }
+}
