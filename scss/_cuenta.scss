@@ -1,0 +1,93 @@
+.scale-up-center{
+    display: flex;
+    animation: scale-up-center 0.4s;
+    align-items: center;
+    justify-content: space-evenly;
+    .cuenta_form{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: space-between;
+        padding-bottom: 5%;
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            background-color: #3f3f3fd9;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            margin-left: 10px;
+            width: 500px;
+            height: 600px;
+            box-shadow: 3px 3px rgba(0, 0, 0, 0.592);
+            .cuenta_titulo{
+                color: rgb(235, 235, 235);
+                font-family: 'Oswald',serif;
+                font-size: 45px;
+                font-style: italic;
+                text-shadow: 2px 2px 0px rgb(255, 0, 0);
+            }
+            .email{
+                font-family: 'Young Serif', serif;
+                font-style: italic;
+                text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
+                display: flex;
+                height: 100px;
+                width: 300px;
+                justify-content: center;
+                flex-direction: column;
+                .entrada{
+                    background-color: #6c6c6c;
+                    border-radius: 30px;
+                    color: white;
+                    border-style: none;
+                    padding-left: 5px;
+                }
+            }
+            .password{
+                font-family: 'Young Serif', serif;
+                text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
+                font-style: italic;
+                height: 73px;
+                width: 300px;
+            }
+            .acceder_boton{
+                .acceder{
+                    background-color: #7e0000;
+                    text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
+                    color: rgb(255, 255, 255);
+                    height: 30px;
+                    width: 100px;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+    .mockup{
+        height: 800px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .formulario{
+        width: 100%;
+        height: 420px;
+        margin-left: 0px;
+        .email{
+            align-items: center;
+            .entrada{
+                width: 90%;
+            }
+        }
+        .password{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .mockup{
+        display: none;
+    }
+
+}
