@@ -1,0 +1,60 @@
+@media (min-width: 767px) and (max-width: 1280px){
+    .carousel-item{
+        .foto_auto{
+            width: 100%;
+        }
+        .carousel-caption{
+            background-color: #0000004f;
+        }
+    }
+    .carousel-control-prev-icon{
+        background-image: url("../assets/images/flecha-anterior.png");
+    }
+    .carousel-control-next-icon{
+        background-image: url("../assets/images/flecha.png");
+    }
+
+
+    .part2-vehiculos{
+        margin-top: 10%;
+        .mas-vehiculos{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr 1fr;
+            grid-template-areas: 
+            "titulo titulo"
+            "foto1 foto2"
+            "foto3 foto4"
+            "foto5 foto6"
+            ;
+            gap: 15px;
+            .titulo-vehiculos{
+                font-family: 'Young Serif';
+                color: white;
+                width: 200%;
+            }
+            img{
+                width: 100%;
+            }
+            .foto-angulo1{
+                grid-area: foto1;
+            }
+            .foto-angulo2{
+                grid-area: foto2;
+            }
+            .foto-angulo3{
+                grid-area: foto3;
+            }
+            .foto-angulo4{
+                grid-area: foto4;
+            }
+            .foto-angulo5{
+                grid-area: foto5;
+            }
+            .foto-angulo6{
+                grid-area: foto6;
+            }
+        }
+    }
+}

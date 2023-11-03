@@ -1,26 +1,26 @@
-
-.ustedes_section{
-    padding-top: 5%;
-    background-color: rgba(90, 90, 90, 0.857);
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    .ustedes{
-        width: 100%;
+@media (min-width: 767px) and (max-width: 1280px){
+    .ustedes_section{
+        padding-top: 5%;
+        background-color: #5a5a5a66;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10%;
-        .fotos_ustedes{
-            margin-right: 5%;
-            margin-left: 3%;
-        }
-        .ustedes_texto{
-            font-family: 'Oswald';
-            font-size: 26px;
-            width: 33%;
+        color: white;
+        .ustedes{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10%;
+            .fotos_ustedes{
+                margin-right: 5%;
+                margin-left: 3%;
+            }
+            .ustedes_texto{
+                font-family: 'Oswald';
+                font-size: 26px;
+                width: 33%;
+            }
         }
     }
 }
-

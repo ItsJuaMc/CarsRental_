@@ -1,3 +1,6 @@
+
+//--------INICIO MEDIA----------//
+
 @media (min-width: 320px) and (max-width: 767px) {
     .titulo{
         display: none;
@@ -13,7 +16,11 @@
         width: 100%;
         justify-content: center;
         .contenido1{
+            display: grid;
             grid-area: contenido1;
+            justify-items: center;
+            font-family: 'Oswald',serif;
+            color: white;
             .h2_contenido{
                 margin-bottom: 5px;
             }
@@ -22,21 +29,118 @@
             }
         }
         .contenido2{
+            display: grid;
             grid-area: contenido2;
             font-size: 18px;
+            font-family: 'Oswald',serif;
             width: 100%;
+            justify-items: center;
+            color: white;
             .enlace_foto{
                 .foto_contenido2{
                     width: 100%;
-                    height: 112%;
                 }
             }
         }
         .contenido3{
+            display: grid;
             grid-area: contenido3;
+            color: white;
+            font-family: 'Oswald',serif;
+            justify-items: center;
         }
     }
 }
+
+//--------VEHICULOS MEDIA----------//
+
+@media (min-width: 320px) and (max-width: 767px){
+    .carousel-item{
+        padding: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .part2-vehiculos{
+        .mas-vehiculos{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 120px 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "titulo"
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            ;
+            justify-items: center;
+            gap: 10px;
+            align-items: center;
+            img{
+                width: 85%;
+            }
+            .titulo-vehiculos{
+                font-family: 'Young Serif';
+                color: white;
+                width: 100%;
+            }
+            .foto-angulo1{
+                animation:animacion-copada .9s linear both;
+                grid-area: foto1;
+            }
+            .foto-angulo2{
+                animation:animacion-copada .9s linear both;
+                grid-area: foto2;
+            }
+            .foto-angulo3{
+                animation:animacion-copada .9s linear both;
+                grid-area: foto3;
+            }
+            .foto-angulo4{
+                animation:animacion-copada .9s linear both;
+                grid-area: foto4;
+            }
+            .foto-angulo5{
+                animation:animacion-copada .9s linear both;
+                grid-area: foto5;
+            }
+            .foto-angulo6{
+                animation:animacion-copada .9s linear both;
+                grid-area: foto6;
+            }
+        }
+    }
+}
+
+@keyframes animacion-copada{
+    0%{
+        transform:scale3d(1,1,1)
+    }
+    30%{
+        transform:scale3d(1.25,.75,1)
+    }
+    40%{
+        transform:scale3d(.75,1.25,1)
+    }
+    50%{
+        transform:scale3d(1.15,.85,1)
+    }
+    65%{
+        transform:scale3d(.95,1.05,1)
+    }
+    75%{
+        transform:scale3d(1.05,.95,1)
+    }
+    100%{
+        transform:scale3d(1,1,1)
+    }
+}
+
+
+//--------FOOTER MEDIA----------//
 
 @media (min-width: 320px) and (max-width: 767px){
     .piedepagina{
@@ -52,52 +156,150 @@
             "redes";
             justify-items: center;
             font-size: 11px;
-            .h2{
+            #h2_footer{
                 grid-area: copy;
-                font-size: 12px;
+                font-size: 12.1px;
+                margin: 0;
             }
             a{
                 .redes{
                     grid-area: redes;
-                    width: 28px;
-                    height: 28px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
         .copyright{
             margin-bottom: 0px;
+            font-size: 5px;
         }
     }
 }
 
+//--------CUENTA MEDIA----------//
+
 @media (min-width: 320px) and (max-width: 767px){
-    .formulario{
+    .scale-up-center{
+        display: flex;
+        padding: 5%;
+    }
+    .master_cuenta{
         width: 100%;
-        height: 420px;
-        margin-left: 0px;
-        .email{
-            align-items: center;
-            .entrada{
-                width: 90%;
+        height: 100%;
+        background: url("../assets/images/fondo.jpg");
+        background-position: 15%;
+        .cuenta_form{
+            width: 100%;
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(63, 63, 63, 0.8509803922);
+                justify-content: center;
+                align-items: center;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                box-shadow: 3px 3px rgba(0, 0, 0, 0.592);
+                width: 100%;
+                height: 420px;
+                margin-left: 0px;
+                color: white;
+                .cuenta_titulo{
+                    color: rgb(235, 235, 235);
+                    font-family: "Oswald", serif;
+                    font-size: 45px;
+                    font-style: italic;
+                    text-shadow: 2px 2px 0px rgb(255, 0, 0);
+                }
+                .email{
+                    font-family: "Young Serif", serif;
+                    font-style: italic;
+                    text-shadow: 2px 2px 0px rgb(12, 12, 12);
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    .entrada{
+                        background-color: #6c6c6c;
+                        border-radius: 30px;
+                        color: white;
+                        border-style: none;
+                        padding-left: 5px;
+                        width: 100%;
+                    }
+                }
+                .password{
+                    display: flex;
+                    font-family: 'Young Serif', serif;
+                    text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
+                    font-style: italic;
+                    height: 73px;
+                    width: 300px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .entrada{
+                        background-color: #6c6c6c;
+                        border-radius: 30px;
+                        color: white;
+                        border-style: none;
+                        padding-left: 5px;
+                        width: 55%;
+                    }
+                }
+                .acceder_boton{
+                    .acceder{
+                        background-color: #7e0000;
+                        text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
+                        color: rgb(255, 255, 255);
+                        height: 30px;
+                        width: 90px;
+                        border-radius: 30px;
+                    }
+                }
             }
         }
-        .password{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .mockup{
+            display: none;
         }
     }
-    .mockup{
-        display: none;
-    }
-
 }
 
+
+//--------CONTACTO MEDIA----------//
+
+
 @media (min-width: 320px) and (max-width: 767px){
+    .titulo-contacto{
+        padding-top: 50px;
+        display: flex;
+        font-size: 37px;
+    }
     .section_contacto{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 89.8px;
         .contenedor_contacto{
-            width: 85%;
+            width: 80%;
+            color: white;
+            .bn13{
+                display: inline-block;
+                padding: 0.65em 1.6em;
+                border: 2px solid #ffffff;
+                margin: 0 0.3em 0.3em 0;
+                border-radius: 0.12em;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                color: #ffffff;
+                text-align: center;
+                width: 100%;
+                transition: all 0.2s;
+                animation: bn13bouncy 5s infinite linear;
+                position: relative;
+            }
         }
         .foto_ilustrativa{
             display: none;
@@ -105,34 +307,89 @@
     }
 }
 
+
+////--------NAVBAR MEDIA----------//
+
+
 @media (min-width: 320px) and (max-width: 767px){
-    .contenedor_nav{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "logo"
-        "lista"
-        "lista"
-        "lista"
-        "lista"
-        "lista";
-        width: 100vw;
-        justify-items: center;
-        .logoprincipal{
-            display: grid;
-            grid-area: logo;
-            width: 100%;
-            height: 100%;
+    .iniciocabecera{
+        display: none;
+    }
+    .bg-body-tertiary{
+        display: block;
+        position: relative;
+        padding: 0;
+        .container-fluid{
+            flex-wrap: nowrap;
+            background-color: black;
+            padding: 0;
+            a{
+                img{
+                    width: 75%;
+                }
+            }
+            .navbar-toggler{
+                .navbar-toggler-icon{
+                    background-image: url("../assets/images/menu_hamburguesa.jpg");
+                }
+            }
+            #offcanvasNavbar{
+                background-color: #0000008f;
+                .offcanvas-header{
+                    color: white;
+                    .btn-close{
+                        border-radius: 30px;
+                        height: 10px;
+                        width: 10px;
+                        margin-left: 2px;
+                        background-image: url("../assets/images/cruz-peque.png");
+                    }
+                }
+                .offcanvas-body{
+                    ul{
+                        li{
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar-nav{
+                align-items: center;
+            }
+            
         }
-        .listado{
-            display: grid;
-            grid-area: lista;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-content: space-evenly;
-            justify-items: center;
-        }
-    } 
+    }
+    .offcanvas{
+        --bs-offcanvas-width: 200px;
+    }
 }
+
+//--------USTEDES MEDIA----------//
+
+@media (min-width: 320px) and (max-width: 767px){
+    .ustedes_section{
+        display: flex;
+        background-color: #5a5a5a66;
+        flex-direction: column;
+        padding-top: 30px;
+        .ustedes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            .fotos_ustedes{
+                width: 170px;
+            }
+            .ustedes_texto{
+                width: 100%;
+                color: white;
+                font-size: 18px;
+                font-family: 'Oswald';
+                margin: 10px;
+            }
+        }
+    }
+}
+
