@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Young+Serif&display=swap');
 
+$fuente-young-serif-blanca: (
+    fontF: 'Young Serif', serif
+    blanco: rgb(255, 255, 255)
+);
+$fuente-oswald-blanca: (
+    fontFo: 'Oswald'
+);
+
 *{
     margin: 0;
     padding: 0;

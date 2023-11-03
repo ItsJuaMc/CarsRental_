@@ -19,7 +19,7 @@
             display: grid;
             grid-area: contenido1;
             justify-items: center;
-            font-family: 'Oswald',serif;
+            font-family: map-get($fuente-oswald-blanca, fontFo );
             color: white;
             .h2_contenido{
                 margin-bottom: 5px;
@@ -32,7 +32,7 @@
             display: grid;
             grid-area: contenido2;
             font-size: 18px;
-            font-family: 'Oswald',serif;
+            font-family: map-get($fuente-oswald-blanca, fontFo );
             width: 100%;
             justify-items: center;
             color: white;
@@ -46,7 +46,7 @@
             display: grid;
             grid-area: contenido3;
             color: white;
-            font-family: 'Oswald',serif;
+            font-family: map-get($fuente-oswald-blanca, fontFo );
             justify-items: center;
         }
     }
@@ -83,7 +83,7 @@
                 width: 85%;
             }
             .titulo-vehiculos{
-                font-family: 'Young Serif';
+                font-family: map-get($fuente-young-serif-blanca, fontF);
                 color: white;
                 width: 100%;
             }
@@ -205,13 +205,13 @@
                 color: white;
                 .cuenta_titulo{
                     color: rgb(235, 235, 235);
-                    font-family: "Oswald", serif;
+                    font-family: map-get($fuente-oswald-blanca, fontFo);
                     font-size: 45px;
                     font-style: italic;
                     text-shadow: 2px 2px 0px rgb(255, 0, 0);
                 }
                 .email{
-                    font-family: "Young Serif", serif;
+                    font-family: map-get($fuente-young-serif-blanca, fontF);
                     font-style: italic;
                     text-shadow: 2px 2px 0px rgb(12, 12, 12);
                     display: flex;
@@ -229,7 +229,7 @@
                 }
                 .password{
                     display: flex;
-                    font-family: 'Young Serif', serif;
+                    font-family: map-get($fuente-young-serif-blanca, fontF);
                     text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
                     font-style: italic;
                     height: 73px;
@@ -250,7 +250,7 @@
                     .acceder{
                         background-color: #7e0000;
                         text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
-                        color: rgb(255, 255, 255);
+                        color: white;
                         height: 30px;
                         width: 90px;
                         border-radius: 30px;
@@ -386,7 +386,7 @@
                 width: 100%;
                 color: white;
                 font-size: 18px;
-                font-family: 'Oswald';
+                font-family: map-get($fuente-oswald-blanca, fontFo);
                 margin: 10px;
             }
         }

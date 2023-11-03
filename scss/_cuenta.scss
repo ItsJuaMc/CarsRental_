@@ -34,7 +34,7 @@
                     text-shadow: 2px 2px 0px rgb(255, 0, 0);
                 }
                 .email{
-                    font-family: 'Young Serif', serif;
+                    font-family: map-get($fuente-young-serif-blanca, fontF);
                     font-style: italic;
                     text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
                     display: flex;
@@ -51,7 +51,7 @@
                     }
                 }
                 .password{
-                    font-family: 'Young Serif', serif;
+                    font-family:map-get($fuente-young-serif-blanca, fontF);
                     text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
                     font-style: italic;
                     height: 73px;
@@ -68,7 +68,7 @@
                     .acceder{
                         background-color: #7e0000;
                         text-shadow: 2px 2px 0px rgba(12, 12, 12, 1);
-                        color: rgb(255, 255, 255);
+                        color: white;
                         height: 30px;
                         width: 100px;
                         border-radius: 30px;
@@ -78,6 +78,7 @@
         }
         .mockup{
             height: 800px;
+            animation:shake-left-right 1.2s linear both;
         }
     }
 }
@@ -95,5 +96,27 @@
         transform:scale(1);
         filter:blur(0);
         opacity:1
+    }
+}
+
+@keyframes shake-left-right{
+    0%,100%{
+        transform:rotate(0deg);
+        transform-origin:50% 50%
+    }
+    10%{
+        transform:rotate(8deg)
+    }
+    20%,40%,60%{
+        transform:rotate(-10deg)
+    }
+    30%,50%,70%{
+        transform:rotate(10deg)
+    }
+    80%{
+        transform:rotate(-8deg)
+    }
+    90%{
+        transform:rotate(8deg)
     }
 }

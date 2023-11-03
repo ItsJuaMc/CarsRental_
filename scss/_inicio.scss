@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: row;
         color: white;
-        font-family: 'Oswald',serif;
+        font-family: map-get($fuente-oswald-blanca, fontFo);
         background-color: #24242450;
         font-size: 18px;
         .contenido1{
@@ -24,7 +24,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-family: 'Young Serif', serif;
+            color: map-get($fuente-young-serif-blanca, fontF);
             font-style: italic;
             justify-content: center;
             flex-wrap: wrap;

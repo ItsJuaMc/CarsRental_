@@ -52,7 +52,7 @@ main {
   height: 100%;
 }
 main h1 {
-  font-family: "Young Serif", serif;
+  font-family: "Young Serif";
   color: #FF0000;
   display: flex;
   font-size: 60px;
@@ -238,7 +238,7 @@ main h1 {
     text-shadow: 2px 2px 0px rgb(255, 0, 0);
   }
   .scale-up-center .cuenta_form .formulario .email {
-    font-family: "Young Serif", serif;
+    font-family: "Young Serif";
     font-style: italic;
     text-shadow: 2px 2px 0px rgb(12, 12, 12);
     display: flex;
@@ -255,7 +255,7 @@ main h1 {
     padding-left: 5px;
   }
   .scale-up-center .cuenta_form .formulario .password {
-    font-family: "Young Serif", serif;
+    font-family: "Young Serif";
     text-shadow: 2px 2px 0px rgb(12, 12, 12);
     font-style: italic;
     height: 73px;
@@ -271,13 +271,14 @@ main h1 {
   .scale-up-center .cuenta_form .formulario .acceder_boton .acceder {
     background-color: #7e0000;
     text-shadow: 2px 2px 0px rgb(12, 12, 12);
-    color: rgb(255, 255, 255);
+    color: white;
     height: 30px;
     width: 100px;
     border-radius: 30px;
   }
   .scale-up-center .mockup {
     height: 800px;
+    animation: shake-left-right 1.2s linear both;
   }
 }
 .cuenta_form {
@@ -294,6 +295,27 @@ main h1 {
     transform: scale(1);
     filter: blur(0);
     opacity: 1;
+  }
+}
+@keyframes shake-left-right {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
   }
 }
 @media (min-width: 767px) and (max-width: 1280px) {
@@ -323,28 +345,58 @@ main h1 {
   .part2-vehiculos .mas-vehiculos .titulo-vehiculos {
     font-family: "Young Serif";
     color: white;
+    padding-left: 30px;
     width: 200%;
   }
   .part2-vehiculos .mas-vehiculos img {
     width: 100%;
   }
   .part2-vehiculos .mas-vehiculos .foto-angulo1 {
+    animation: animacion-copada 0.9s linear both;
     grid-area: foto1;
   }
   .part2-vehiculos .mas-vehiculos .foto-angulo2 {
+    animation: animacion-copada 0.9s linear both;
     grid-area: foto2;
   }
   .part2-vehiculos .mas-vehiculos .foto-angulo3 {
+    animation: animacion-copada 0.9s linear both;
     grid-area: foto3;
   }
   .part2-vehiculos .mas-vehiculos .foto-angulo4 {
+    animation: animacion-copada 0.9s linear both;
     grid-area: foto4;
   }
   .part2-vehiculos .mas-vehiculos .foto-angulo5 {
+    animation: animacion-copada 0.9s linear both;
     grid-area: foto5;
   }
   .part2-vehiculos .mas-vehiculos .foto-angulo6 {
+    animation: animacion-copada 0.9s linear both;
     grid-area: foto6;
+  }
+}
+@keyframes animacion-copada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
 @media (min-width: 767px) and (max-width: 1280px) {
@@ -352,7 +404,7 @@ main h1 {
     display: flex;
     flex-direction: row;
     color: white;
-    font-family: "Oswald", serif;
+    font-family: "Oswald";
     background-color: rgba(36, 36, 36, 0.3137254902);
     font-size: 18px;
   }
@@ -374,7 +426,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Young Serif", serif;
+    color: "Young Serif";
     font-style: italic;
     justify-content: center;
     flex-wrap: wrap;
@@ -420,7 +472,7 @@ main h1 {
     display: grid;
     grid-area: contenido1;
     justify-items: center;
-    font-family: "Oswald", serif;
+    font-family: "Oswald";
     color: white;
   }
   .padresdecontenido .contenido1 .h2_contenido {
@@ -433,7 +485,7 @@ main h1 {
     display: grid;
     grid-area: contenido2;
     font-size: 18px;
-    font-family: "Oswald", serif;
+    font-family: "Oswald";
     width: 100%;
     justify-items: center;
     color: white;
@@ -445,7 +497,7 @@ main h1 {
     display: grid;
     grid-area: contenido3;
     color: white;
-    font-family: "Oswald", serif;
+    font-family: "Oswald";
     justify-items: center;
   }
 }
@@ -579,13 +631,13 @@ main h1 {
   }
   .master_cuenta .cuenta_form .formulario .cuenta_titulo {
     color: rgb(235, 235, 235);
-    font-family: "Oswald", serif;
+    font-family: "Oswald";
     font-size: 45px;
     font-style: italic;
     text-shadow: 2px 2px 0px rgb(255, 0, 0);
   }
   .master_cuenta .cuenta_form .formulario .email {
-    font-family: "Young Serif", serif;
+    font-family: "Young Serif";
     font-style: italic;
     text-shadow: 2px 2px 0px rgb(12, 12, 12);
     display: flex;
@@ -603,7 +655,7 @@ main h1 {
   }
   .master_cuenta .cuenta_form .formulario .password {
     display: flex;
-    font-family: "Young Serif", serif;
+    font-family: "Young Serif";
     text-shadow: 2px 2px 0px rgb(12, 12, 12);
     font-style: italic;
     height: 73px;
@@ -623,7 +675,7 @@ main h1 {
   .master_cuenta .cuenta_form .formulario .acceder_boton .acceder {
     background-color: #7e0000;
     text-shadow: 2px 2px 0px rgb(12, 12, 12);
-    color: rgb(255, 255, 255);
+    color: white;
     height: 30px;
     width: 90px;
     border-radius: 30px;
