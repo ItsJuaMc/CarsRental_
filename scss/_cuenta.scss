@@ -1,8 +1,9 @@
 .master_cuenta{
     background: url("../assets/images/fondo.jpg");
 }
-@media (min-width: 767px) and (max-width: 1280px){
 
+@media (min-width: 767px) and (max-width: 1280px){
+    
     .scale-up-center{
         display: flex;
         animation: scale-up-center 0.4s;
@@ -32,6 +33,7 @@
                     font-size: 45px;
                     font-style: italic;
                     text-shadow: 2px 2px 0px rgb(255, 0, 0);
+                    margin-bottom: 50px;
                 }
                 .email{
                     font-family: map-get($fuente-young-serif-blanca, fontF);

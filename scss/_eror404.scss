@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+.error{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    h1{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 40px
+    }
+    h3{
+        font-size: 14px;
+    }
+}

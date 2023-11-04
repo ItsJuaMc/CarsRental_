@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  background-color: black;
+}
+
 nav {
   background-color: black;
 }
@@ -236,6 +240,7 @@ main h1 {
     font-size: 45px;
     font-style: italic;
     text-shadow: 2px 2px 0px rgb(255, 0, 0);
+    margin-bottom: 50px;
   }
   .scale-up-center .cuenta_form .formulario .email {
     font-family: "Young Serif";
@@ -635,6 +640,7 @@ main h1 {
     font-size: 45px;
     font-style: italic;
     text-shadow: 2px 2px 0px rgb(255, 0, 0);
+    margin-bottom: 50px;
   }
   .master_cuenta .cuenta_form .formulario .email {
     font-family: "Young Serif";
@@ -788,6 +794,24 @@ main h1 {
     font-family: "Oswald";
     margin: 10px;
   }
+}
+body {
+  background-color: black;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.error h1 {
+  font-size: 80px;
+}
+.error h2 {
+  font-size: 40px;
+}
+.error h3 {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */
